@@ -80,7 +80,7 @@ class Truncated_Cauchy_self_attention_block(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """
-        Truncated Cauchy self-attention layer
+        Truncated Cauchy self-attention block
         :param x: class:`torch.Tensor` of shape (batch_size, L).
         :return: output: Output tensor with shape (batch_size, L, d_output).
         """
@@ -100,7 +100,7 @@ class Truncated_Cauchy_self_attention_block(nn.Module):
             positional_encoding = positional_encoding.to(encoding.device)
             encoding.add_(positional_encoding)
 
-        # Encoder；layers
+        # Encoder layers
         for layer in self.layers_encoding:
             encoding = layer(encoding)
         output = self._linear(encoding)    #reshape the output of encoder；layer
