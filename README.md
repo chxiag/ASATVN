@@ -30,6 +30,9 @@ results, respectively.
 - Truncated_Cauchy_self_attention_block.py: Contains Truncated Cauchy self-attention block described in paper.
 - Self_attentive_discriminator.py: Contains self-attentive discriminator described in paper.
 
+## Data
+The data used to demonstrate the ability of our ASATVN model to simulate short-term trends in the paper can be found here https://robjhyndman.com/tsdl/.
+To verify the ability of our proposed model to learn the long-term trends of sequential data, we perform experiments on other more challenging datasets.  These datasets can be found here https://arxiv.org/pdf/2012.07436.pdf.
 
 ## Usage
 
