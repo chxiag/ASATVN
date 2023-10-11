@@ -2,7 +2,7 @@
 
 PyTorch implementation of ASATVN described in the paper entitled 
 "Adversarial Self-Attentive Time-Variant Neural Networks for Multi-Step Time Series Forecasting" 
-by Changxia Gao, Ning Zhang, Youru Li and Huaiyu Wan.
+by Changxia Gao, Ning Zhang, Youru Li, Yan Lin and Huaiyu Wan.
 
 
 The key benifits of ASATVN are:
